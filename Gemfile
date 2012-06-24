@@ -7,7 +7,7 @@ gem 'bcrypt-ruby', '3.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 
 
 # Gems used only for assets and not required
@@ -43,4 +43,9 @@ group :test, :development do
   gem "rspec-rails", "~> 2.10.0"
   gem 'annotate', '~> 2.4.1.beta'
   gem 'factory_girl_rails', '1.4.0'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg', '0.12.2'
 end
